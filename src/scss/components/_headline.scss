@@ -1,0 +1,22 @@
+.headline {
+  &.center {
+    text-align: center;
+  }
+
+  &.left {
+    text-align: left;
+
+    @include breakpoint(mobile) {
+      text-align: center;
+    }
+  }
+
+  span {
+    color: $grayer;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 2rem;
+    letter-spacing: .3rem;
+  }
+}

@@ -1,0 +1,61 @@
+/** Typography **/
+html {
+    font-size: 62.5%;
+
+    @include breakpoint( tablet ) {
+        font-size: 50%;
+    }
+
+    @include breakpoint( mobile ) {
+        font-size: 43.75%;
+    }
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+    letter-spacing: .6px;
+    color: $dark;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 500;
+    color: $darker;
+}
+
+h1 {
+    font-size: 6rem;
+    line-height: 6.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+    line-height: 4.2rem;
+}
+
+h4 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+}
+
+h5 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+
+h5 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+h6 {
+    font-size: 1.6rem;;
+    line-height: 1.8rem;
+}

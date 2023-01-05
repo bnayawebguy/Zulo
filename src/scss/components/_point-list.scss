@@ -1,0 +1,37 @@
+.point-list {
+  list-style: none;
+  display: inline-flex;
+  flex-flow: column;
+  row-gap: 3rem;
+
+  li {
+    display: flex;
+    column-gap: 2rem;
+
+    .sno {
+      display: inline-flex;
+      width: 45px;
+      height: 40px;
+      background-color: $primary;
+      color: $light;
+      line-height: 1.4rem;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+
+      @include breakpoint( tablet ) {
+        height: 30px;
+        width: 30px;
+      }
+
+      svg {
+        width: 3rem;
+        line-height: 3rem;
+      }
+    }
+
+    h5 {
+      margin-bottom: 1rem;
+    }
+  }
+}

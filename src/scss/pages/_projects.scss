@@ -1,0 +1,109 @@
+.project-slider {
+  padding: 0 -15px;
+
+  .slick-slide {
+    margin: 0 15px;
+  }
+}
+
+.project-filter {
+  padding: 0;
+  display: flex;
+  column-gap: 4rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+
+  button {
+    color: $grayer;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    letter-spacing: 0.3rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &::before {
+      content: "";
+      width: 0.8rem;
+      height: 0.8rem;
+      background-color: $grayer;
+      border-radius: 50%;
+      margin-right: 1.2rem;
+    }
+
+    &:hover {
+      color: $primary;
+
+      &::before {
+        background-color: $primary;
+      }
+    }
+  }
+}
+
+.projects {
+  display: flex;
+  column-gap: 3rem;
+  row-gap: 4rem;
+  flex-wrap: wrap;
+
+  .mix {
+    width: 30%;
+    text-align: center;
+
+    @include breakpoint(tablet) {
+      width: 48%;
+    }
+
+    @include breakpoint(mobile) {
+      width: 100%;
+    }
+
+    figure {
+      line-height: 0;
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .category {
+      text-decoration: none;
+      color: $primary;
+      display: inline-flex;
+      align-items: center;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      font-weight: 700;
+      margin-top: 2rem;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 2rem;
+        height: 0.1rem;
+        background-color: $primary;
+        margin-right: 1rem;
+      }
+    }
+
+    h4 {
+      margin-top: 1rem;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.icon-text-wrap {
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  row-gap: 3rem;
+
+  @include breakpoint(tablet) {
+    flex-flow: row;
+    column-gap: 4rem;
+  }
+
+  .icon-text-block {
+    display: flex;
+
+    .icon {
+      margin: .3rem 2rem 0 0;
+    }
+
+    .title {
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: $darkest;
+    }
+  }
+}

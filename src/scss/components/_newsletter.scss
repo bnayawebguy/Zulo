@@ -1,0 +1,25 @@
+.newsletter {
+  display: inline-flex;
+
+  input[type="text"] {
+    border: none;
+    padding: 1.4rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+  }
+
+  button {
+    cursor: pointer;
+    background-color: $primary;
+    padding: 1rem 2rem;
+    border: none;
+    font-weight: 700;
+    color: $light;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

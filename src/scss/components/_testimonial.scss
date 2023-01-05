@@ -1,0 +1,22 @@
+.testimonial {
+  text-align: center;
+  padding: 0 10rem 0 2rem;
+
+  @include breakpoint(tablet) {
+    padding: 4rem;
+  }
+
+  .rating {
+    display: inline-flex;
+    gap: 1.2rem;
+
+    svg {
+      color: $yellow;
+      width: 1.6rem;
+    }
+  }
+
+  p {
+    margin: 2rem 0 4rem 0;
+  }
+}

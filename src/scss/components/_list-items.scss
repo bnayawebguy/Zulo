@@ -1,0 +1,44 @@
+.list-items {
+  display: flex;
+  gap: 2rem;
+
+  & > ul {
+    flex: 1;
+    list-style: none;
+  }
+
+  li {
+    display: flex;
+    margin-bottom: 2rem;
+
+    .icon {
+      display: inline-block;
+      width: 45px;
+      height: 30px;
+      background-color: $lightblue;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin: 0.3rem 1.5rem 0 0;
+
+      @include breakpoint(tablet) {
+        width: 20px;
+        height: 20px
+      }
+
+      @include breakpoint(mobile) {
+        height: 20px;
+      }
+
+      @include breakpoint(mobile) {
+        width: 28px;
+      }
+
+      svg {
+        color: $primary;
+        width: 1.2rem;
+      }
+    }
+  }
+}

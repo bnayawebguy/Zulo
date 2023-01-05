@@ -1,0 +1,14 @@
+.top-header {
+  background-color: $primary;
+  padding: 1rem 0;
+}
+
+.site-logo {
+  a {
+    font-weight: 700;
+    text-decoration: none;
+    color: $primary;
+    font-size: 3.6rem;
+    letter-spacing: .5rem;
+  }
+}

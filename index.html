@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Zulo - A Corporate Website</title>
+  </head>
+  <body>
+    <header>
+      <div class="top-header md-hide">
+        <div class="zo-row">
+          <div class="col-6-12 col-md-4-12">
+            <a href="#" class="icon-text">
+              <i data-feather="map-pin"></i
+              ><span>Sunakothi 27, Loktantrik Path</span>
+            </a>
+          </div>
+          <div class="col-6-12 col-md-8-12 inline-flex gap-x-2 justify-right">
+            <a href="tel:9779849947379" class="icon-text">
+              <i data-feather="phone"></i><span>+977 9849947379</span></a
+            >
+            <a href="mailto:info@companyname.com" class="icon-text">
+              <i data-feather="send"></i><span>info@companyname.com</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="main-header p-y-3">
+        <div class="zo-row align-center">
+          <div class="col-2-12 col-sm-4-12">
+            <div class="site-logo">
+              <a href="/">ZULO.</a>
+            </div>
+          </div>
+          <div class="col-7-12 col-sm-4-12">
+            <div class="nav main-nav flex justify-center">
+              <ul>
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
+              </ul>
+              <div class="menu-toggle">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-3-12 col-sm-4-12">
+            <div class="nav side-nav">
+              <ul>
+                <li class="has-dropdown">
+                  <a href="#">En<i data-feather="chevron-down"></i></a>
+                  <ul class="dropdown">
+                    <li><a href="#">En</a></li>
+                    <li><a href="#">Es</a></li>
+                    <li><a href="#">Gr</a></li>
+                  </ul>
+                </li>
+                <li><a class="btn btn-primary" href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="site-nav"></div>
+      </div>
+    </header>
+
+    <!-- <div class="preloader-bg">
+      <div class="preloader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div> -->
+
+    <div class="content">
+      <section class="hero-block">
+        <div class="zo-row align-center p-y-3 md-flex-flow-column-reverse">
+          <div class="col-6-12 col-md-1-1 md-text-center">
+            <h1>We bring solutions to make life easier for our customers.</h1>
+            <p class="font-lg m-y-4 leading-3">
+              We have considered our solutions to support every stage of your
+              growth.
+            </p>
+            <a href="#" class="btn btn-primary m-r-2">Explore Now</a>
+            <a href="#" class="btn btn-outline">Free Trial</a>
+          </div>
+          <div class="col-6-12 col-md-1-1 md-m-b-2">
+            <div class="img-wrap">
+              <img src="/images/hero.jpg" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="clogo-block">
+        <div class="zo-row align-center p-y-8">
+          <div class="col-2-12 col-md-4-12 md-m-b-4 text-center">
+            <img src="/images/logo1.png" class="w-10" alt="Client 1" />
+          </div>
+          <div class="col-2-12 col-md-4-12 md-m-b-4 text-center">
+            <img src="/images/logo2.png" class="w-10" alt="Client 2" />
+          </div>
+          <div class="col-2-12 col-md-4-12 md-m-b-4 text-center">
+            <img src="/images/logo3.png" class="w-10" alt="Client 3" />
+          </div>
+          <div class="col-2-12 col-md-4-12 text-center">
+            <img src="/images/logo4.png" class="w-10" alt="Client 4" />
+          </div>
+          <div class="col-2-12 col-md-4-12 text-center">
+            <img src="/images/logo5.png" class="w-10" alt="Client 5" />
+          </div>
+          <div class="col-2-12 col-md-4-12 text-center">
+            <img src="/images/logo6.png" class="w-10" alt="Client 6" />
+          </div>
+        </div>
+      </section>
+
+      <section class="services-block">
+        <div class="zo-row m-b-6">
+          <div class="col-1-1">
+            <div class="headline center">
+              <span>WHAT WE DO</span>
+              <h2>
+                The service we offer is specifically<br />designed to meet your
+                needs.
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="zo-row">
+          <div class="col-3-12 col-md-6-12 md-m-b-4">
+            <div class="service">
+              <span class="icon">
+                <i data-feather="phone"></i>
+              </span>
+              <h4>24/7 Support</h4>
+              <p>
+                Etiam porta sem malesuada magna mollis euismod. Donec
+                ullamcorper nulla non metus auctor fringilla.
+              </p>
+              <a href="">
+                <span>Learn More</span><i data-feather="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-3-12 col-md-6-12 md-m-b-4">
+            <div class="service">
+              <span class="icon">
+                <i data-feather="airplay"></i>
+              </span>
+              <h4>Secure Payments</h4>
+              <p>
+                Etiam porta sem malesuada magna mollis euismod. Donec
+                ullamcorper nulla non metus auctor fringilla.
+              </p>
+              <a href="">
+                <span>Learn More</span><i data-feather="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-3-12 col-md-6-12">
+            <div class="service">
+              <span class="icon">
+                <i data-feather="cast"></i>
+              </span>
+              <h4>Daily Updates</h4>
+              <p>
+                Etiam porta sem malesuada magna mollis euismod. Donec
+                ullamcorper nulla non metus auctor fringilla.
+              </p>
+              <a href="">
+                <span>Learn More</span><i data-feather="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-3-12 col-md-6-12">
+            <div class="service">
+              <span class="icon">
+                <i data-feather="camera-off"></i>
+              </span>
+              <h4>Market Research</h4>
+              <p>
+                Etiam porta sem malesuada magna mollis euismod. Donec
+                ullamcorper nulla non metus auctor fringilla.
+              </p>
+              <a href="">
+                <span>Learn More</span><i data-feather="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="steps-block p-y-8">
+        <div class="zo-row align-center">
+          <div class="col-6-12 col-md-1-1 md-m-b-4">
+            <div class="img-wrap">
+              <img src="/images/steps.jpg" alt="Steps" />
+            </div>
+          </div>
+          <div class="col-6-12 col-md-1-1 p-l-4">
+            <div class="headline left">
+              <h2>How It Works?</h2>
+            </div>
+            <p class="font-md m-y-3">
+              So here are three working steps why our valued customers choose
+              us.
+            </p>
+            <ul class="point-list">
+              <li>
+                <span class="sno">1</span>
+                <div class="content">
+                  <h5>Collect Ideas</h5>
+                  <p>
+                    Nulla vitae elit libero pharetra augue dapibus. Praesent
+                    commodo cursus.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="sno">2</span>
+                <div class="content">
+                  <h5>Data Analysis</h5>
+                  <p>
+                    Nulla vitae elit libero pharetra augue dapibus. Praesent
+                    commodo cursus.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="sno">3</span>
+                <div class="content">
+                  <h5>Finalize Product</h5>
+                  <p>
+                    Nulla vitae elit libero pharetra augue dapibus. Praesent
+                    commodo cursus.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="products-block">
+        <div class="zo-row m-b-6">
+          <div class="col-1-1">
+            <div class="headline center">
+              <span>LATEST PROJECTS</span>
+              <h2>
+                Check out some of our awesome projects<br />with creative ideas
+                and great design.
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div>
+          <ul class="project-slider">
+            <li>
+              <div class="img-wrap">
+                <img src="/images/project1.jpg" alt="Project 1" />
+              </div>
+            </li>
+            <li>
+              <div class="img-wrap">
+                <img src="/images/project2.jpg" alt="Project 2" />
+              </div>
+            </li>
+            <li>
+              <div class="img-wrap">
+                <img src="/images/project3.jpg" alt="Project 3" />
+              </div>
+            </li>
+            <li>
+              <div class="img-wrap">
+                <img src="/images/project4.jpg" alt="Project 4" />
+              </div>
+            </li>
+            <li>
+              <div class="img-wrap">
+                <img src="/images/project5.jpg" alt="Project 5" />
+              </div>
+            </li>
+            <li>
+              <div class="img-wrap">
+                <img src="/images/project6.jpg" alt="Project 6" />
+              </div>
+            </li>
+            <li>
+              <div class="img-wrap">
+                <img src="/images/project7.jpg" alt="Project 7" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="about-block p-y-8">
+        <div class="zo-row align-center md-flex-flow-column-reverse">
+          <div class="col-6-12 col-md-1-1">
+            <div class="video-banner">
+              <img src="/images/about.jpg" alt="About" />
+              <a href="#" class="play-btn"><i data-feather="play"></i></a>
+            </div>
+          </div>
+          <div class="col-6-12 col-md-1-1 md-m-b-4">
+            <div class="headline left">
+              <span>WHO ARE WE?</span>
+              <h2>
+                Company that believes in the<br />power of creative strategy.
+              </h2>
+            </div>
+            <p class="font-md m-y-3">
+              Cum sociis natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Cras justo odio,
+            </p>
+            <div class="list-items">
+              <ul>
+                <li>
+                  <span class="icon"><i data-feather="check"></i></span>
+                  <span
+                    >Aenean eu leo quam ornare curabitur blandit tempus.</span
+                  >
+                </li>
+                <li>
+                  <span class="icon"><i data-feather="check"></i></span>
+                  <span>Etiam porta sem malesuada magna mollis euismod.</span>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span class="icon"><i data-feather="check"></i></span>
+                  <span
+                    >Nullam quis risus eget urna mollis ornare donec elit.</span
+                  >
+                </li>
+                <li>
+                  <span class="icon"><i data-feather="check"></i></span>
+                  <span>Fermentum massa vivamus faucibus amet euismod.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="team-block">
+        <div class="zo-row align-center">
+          <div class="col-4-12 col-sm-1-1 sm-m-b-4">
+            <div class="headline left">
+              <span>MEET THE TEAM</span>
+              <h2>
+                Save your time and money by choosing our professional team.
+              </h2>
+              <p class="font-md m-y-3">
+                Donec id elit non mi porta gravida at eget metus. Morbi leo
+                risus, porta ac consectetur ac, vestibulum at eros tempus
+                porttitor.
+              </p>
+              <a href="#" class="btn btn-primary">See All Members</a>
+            </div>
+          </div>
+          <div class="col-8-12 col-sm-1-1">
+            <div class="team-slider">
+              <div class="member">
+                <div class="img-wrap">
+                  <img src="/images/member1.jpg" alt="Member 1" />
+                </div>
+                <h5>Nikolas Brootan</h5>
+                <span>Sales Manager</span>
+                <p>Donec ornare elit quam porta gravida at egeat</p>
+                <ul class="social-icons">
+                  <li>
+                    <a href="#"><i data-feather="facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i data-feather="twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i data-feather="dribbble"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="member">
+                <div class="img-wrap">
+                  <img src="/images/member2.jpg" alt="Member 2" />
+                </div>
+                <h5>Jamie Sandera</h5>
+                <span>Managing Director</span>
+                <p>Donec ornare elit quam porta gravida at egeat</p>
+                <ul class="social-icons">
+                  <li>
+                    <a href="#"><i data-feather="facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i data-feather="twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i data-feather="dribbble"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="member">
+                <div class="img-wrap">
+                  <img src="/images/member3.jpg" alt="Member 3" />
+                </div>
+                <h5>Tina Galer</h5>
+                <span>Assistant</span>
+                <p>Donec ornare elit quam porta gravida at egeat</p>
+                <ul class="social-icons">
+                  <li>
+                    <a href="#"><i data-feather="facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i data-feather="twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i data-feather="dribbble"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="member">
+                <div class="img-wrap">
+                  <img src="/images/member4.jpg" alt="Member 4" />
+                </div>
+                <h5>Zuliana Mugger</h5>
+                <span>Food Vlogger</span>
+                <p>Donec ornare elit quam porta gravida at egeat</p>
+                <ul class="social-icons">
+                  <li>
+                    <a href="#"><i data-feather="facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i data-feather="twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i data-feather="dribbble"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="member">
+                <div class="img-wrap">
+                  <img src="/images/member5.jpg" alt="Member 5" />
+                </div>
+                <h5>Sliva Gonga</h5>
+                <span>Project Manager</span>
+                <p>Donec ornare elit quam porta gravida at egeat</p>
+                <ul class="social-icons">
+                  <li>
+                    <a href="#"><i data-feather="facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i data-feather="twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i data-feather="dribbble"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-block p-t-25 md-p-t-25 m-b-8">
+        <div class="zo-row bg-lightblue align-center md-align-bottom">
+          <div class="col-5-12 col-md-6-12 sm-hide">
+            <div class="img-wrap p-x-10 nm-t-12">
+              <img src="/images/testimonial.png" alt="Testimonial" />
+            </div>
+          </div>
+          <div class="col-7-12 col-md-6-12 col-sm-1-1">
+            <div class="testimonial">
+              <div class="rating">
+                <i data-feather="star"></i>
+                <i data-feather="star"></i>
+                <i data-feather="star"></i>
+                <i data-feather="star"></i>
+              </div>
+              <p class="font-md">
+                Fusce dapibus tellus ac cursus commodo, tortor mauris
+                condimentum nibh ut fermentum massa, justo sit amet vivamus
+                sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                Cras mattis consectetur purus sit amet fermentum. Aenean lacinia
+                bibendum nulla sed
+              </p>
+              <h5>Corris Ambada</h5>
+              <span>Financial Analyst</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="zo-row p-y-5">
+        <div class="col-3-12 col-md-6-12 md-m-b-2">
+          <div class="footer-logo">
+            <a href="/">ZULO.</a>
+          </div>
+          <p>© 2022 Sandbox.<br />All rights reserved.</p>
+          <ul class="social-icons m-t-2">
+            <li>
+              <a href="#"><i data-feather="facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i data-feather="twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i data-feather="dribbble"></i></a>
+            </li>
+            <li>
+              <a href="#"><i data-feather="instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i data-feather="youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3-12 col-md-6-12 md-m-b-2">
+          <strong class="inline-block font-lg text-light m-b-1"
+            >Get In Touch</strong
+          >
+          <p class="m-b-1">
+            Moonshine St. 14/05<br />Light City,London,<br />United Kingdom
+          </p>
+          <p>
+            <a href="mailto: info@company.com">info@company.com</a><br />
+            <a href="tel: 01 23 456 789">01 23 456 789</a><br />
+          </p>
+        </div>
+        <div class="col-3-12 col-md-6-12">
+          <strong class="inline-block font-lg text-light m-b-1"
+            >Learn More</strong
+          >
+          <div class="footer-nav">
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Terms of Use</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-3-12 col-md-6-12">
+          <strong class="inline-block font-lg text-light m-b-1"
+            >Our Newsletter</strong
+          >
+          <p class="m-b-3">
+            Subscribe to our newsletter to get our news & deals delivered to
+            you.
+          </p>
+          <div class="newsletter">
+            <input type="text" placeholder="Email Address" />
+            <button type="submit">Join Now</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

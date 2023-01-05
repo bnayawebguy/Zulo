@@ -1,0 +1,30 @@
+.team-slider {
+  .member {
+    text-align: center;
+
+    .img-wrap {
+      width: 16rem;
+      height: 16rem;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto; 
+    }
+
+    h5 {
+      margin: 1.6rem 0 .8rem 0;
+    }
+
+    span {
+      text-transform: uppercase;
+      font-size: 1.4rem;
+    }
+
+    p {
+      margin: 1.8rem 0;
+    }
+
+    .social-icons {
+      margin-top: 1rem;
+    }
+  }
+}

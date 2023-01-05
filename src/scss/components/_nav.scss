@@ -1,0 +1,146 @@
+.nav {
+  font-weight: 700;
+  font-size: 1.6rem;
+  position: relative;
+
+  ul {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 6rem;
+
+    li {
+      position: relative;
+
+      a {
+        text-decoration: none;
+        color: $darker;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+
+      &.has-dropdown {
+        a {
+          display: inline-flex;
+          column-gap: 0.6rem;
+
+          svg {
+            width: 1.6rem;
+          }
+        }
+
+        &:hover > ul {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          display: flex;
+          flex-flow: column;
+          background: white;
+          padding: 0.4rem 1rem;
+          border: 1px solid #eeeeee;
+        }
+      }
+    }
+
+    .dropdown {
+      display: none;
+      @include box-shadow(0, 0, 2rem, rgba(0, 0, 0, 0.1));
+    }
+  }
+
+  &.main-nav {
+    ul {
+      li {
+        a {
+          &.active {
+            color: $primary;
+          }
+        }
+
+        @include breakpoint(tablet) {
+          padding: 1.5rem 0;
+          width: 100%;
+          text-align: center;
+
+          &:not(:last-child) {
+            border-bottom: 1px solid $gray2;
+          }
+        }
+      }
+
+      @include breakpoint(tablet) {
+        display: none;
+        position: absolute;
+        background: $light;
+        width: 100%;
+        left: 0;
+        top: 40px;
+        flex-flow: column;
+        @include box-shadow(0, 0, 2rem, rgba(0, 0, 0, 0.1));
+      }
+    }
+  }
+
+  &.side-nav {
+    display: flex;
+    justify-content: end;
+
+    ul {
+      column-gap: 1.6rem;
+      align-items: center;
+    }
+  }
+
+  .menu-toggle {
+    position: relative;
+    display: none;
+
+    span {
+      display: inline-block;
+      height: 2px;
+      width: 40px;
+      background-color: $grayer;
+      position: absolute;
+      left: 0;
+      transition: all 0.5s ease;
+
+      &:nth-child(1) {
+        top: 0;
+      }
+
+      &:nth-child(2) {
+        top: 10px;
+      }
+
+      &:nth-child(3) {
+        top: 20px;
+      }
+    }
+
+    @include breakpoint(tablet) {
+      display: block;
+    }
+
+    &.active {
+      span {
+        &:nth-child(1) {
+          transform: rotate(45deg);
+          transform-origin: top left;
+        }
+
+        &:nth-child(2) {
+          display: none;
+        }
+
+        &:nth-child(3) {
+          top: 29px;
+          left: -40px;
+          transform: rotate(135deg);
+          transform-origin: top right;
+        }
+      }
+    }
+  }
+}

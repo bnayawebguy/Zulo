@@ -1,0 +1,29 @@
+.contact-form {
+  display: flex;
+  flex-flow: column;
+  row-gap: 4rem;
+
+  input, select, textarea {
+    width: 100%;
+    padding: 1.4rem;
+    border: 1px solid $gray;
+    border-radius: .6rem;
+  }
+
+  button {
+    padding: 1.4rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: $primary;
+    color: $light;
+  }
+
+  .c-row {
+    display: flex;
+    column-gap: 4rem;
+
+    .c-col-1-2{
+      flex: 1
+    }
+  }
+}

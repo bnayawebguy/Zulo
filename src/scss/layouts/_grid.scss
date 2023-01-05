@@ -1,0 +1,164 @@
+.zo-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: $gridWidth;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    @include breakpoint( laptop ) {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .col-1-1 {
+        width: 100%;
+    }
+
+    .col-1-12 {
+        width: calc((100% - 11 * #{$gutterHorizontal}) / 12);
+    }
+
+    .col-2-12 {
+        width: calc( 2 * ((100% - 11 * #{$gutterHorizontal}) / 12) + #{$gutterHorizontal});
+    }
+
+    .col-3-12 {
+        width: calc( 3 * ((100% - 11 * #{$gutterHorizontal}) / 12) + 2 * #{$gutterHorizontal});
+    }
+
+    .col-4-12 {
+        width: calc( 4 * ((100% - 11 * #{$gutterHorizontal}) / 12) + 3 * #{$gutterHorizontal});
+    }
+
+    .col-5-12 {
+        width: calc( 5 * ((100% - 11 * #{$gutterHorizontal}) / 12) + 4 * #{$gutterHorizontal});
+    }
+
+    .col-6-12 {
+        width: calc( 6 * ((100% - 11 * #{$gutterHorizontal}) / 12) + 5 * #{$gutterHorizontal});
+    }
+
+    .col-7-12 {
+        width: calc( 7 * ((100% - 11 * #{$gutterHorizontal}) / 12) + 6 * #{$gutterHorizontal});
+    }
+
+    .col-8-12 {
+        width: calc( 8 * ((100% - 11 * #{$gutterHorizontal}) / 12) + 7 * #{$gutterHorizontal});
+    }
+
+    .col-9-12 {
+        width: calc( 9 * ((100% - 11 * #{$gutterHorizontal}) / 12) + 8 * #{$gutterHorizontal});
+    }
+
+    .col-10-12 {
+        width: calc( 10 * ((100% - 11 * #{$gutterHorizontal}) / 12) + 9 * #{$gutterHorizontal});
+    }
+
+    .col-11-12 {
+        width: calc( 11 * ((100% - 11 * #{$gutterHorizontal}) / 12) + 10 * #{$gutterHorizontal});
+    }
+
+    @include breakpoint( tablet ) {
+        /** Medium Classes **/
+        .col-md-1-1 {
+            width: 100%;
+        }
+
+        .col-md-1-12 {
+            width: calc((100% - 11 * #{$gutterHorizontal}) / 12);
+        }
+
+        .col-md-2-12 {
+            width: calc( 2 * ((100% - 11 * #{$gutterHorizontal}) / 12) + #{$gutterHorizontal});
+        }
+
+        .col-md-3-12 {
+            width: calc( 3 * ((100% - 11 * #{$gutterHorizontal}) / 12) + 2 * #{$gutterHorizontal});
+        }
+
+        .col-md-4-12 {
+            width: calc( 4 * ((100% - 11 * #{$gutterHorizontal}) / 12) + 3 * #{$gutterHorizontal});
+        }
+
+        .col-md-5-12 {
+            width: calc( 5 * ((100% - 11 * #{$gutterHorizontal}) / 12) + 4 * #{$gutterHorizontal});
+        }
+
+        .col-md-6-12 {
+            width: calc( 6 * ((100% - 11 * #{$gutterHorizontal}) / 12) + 5 * #{$gutterHorizontal});
+        }
+
+        .col-md-7-12 {
+            width: calc( 7 * ((100% - 11 * #{$gutterHorizontal}) / 12) + 6 * #{$gutterHorizontal});
+        }
+
+        .col-md-8-12 {
+            width: calc( 8 * ((100% - 11 * #{$gutterHorizontal}) / 12) + 7 * #{$gutterHorizontal});
+        }
+
+        .col-md-9-12 {
+            width: calc( 9 * ((100% - 11 * #{$gutterHorizontal}) / 12) + 8 * #{$gutterHorizontal});
+        }
+
+        .col-md-10-12 {
+            width: calc( 10 * ((100% - 11 * #{$gutterHorizontal}) / 12) + 9 * #{$gutterHorizontal});
+        }
+
+        .col-md-11-12 {
+            width: calc( 11 * ((100% - 11 * #{$gutterHorizontal}) / 12) + 10 * #{$gutterHorizontal});
+        }
+    }
+
+    @include breakpoint( mobile ) {
+        /** Medium Classes **/
+        .col-sm-1-1 {
+            width: 100%;
+        }
+
+        .col-sm-1-12 {
+            width: calc((100% - 11 * #{$gutterHorizontal}) / 12);
+        }
+
+        .col-sm-2-12 {
+            width: calc( 2 * ((100% - 11 * #{$gutterHorizontal}) / 12) + #{$gutterHorizontal});
+        }
+
+        .col-sm-3-12 {
+            width: calc( 3 * ((100% - 11 * #{$gutterHorizontal}) / 12) + 2 * #{$gutterHorizontal});
+        }
+
+        .col-sm-4-12 {
+            width: calc( 4 * ((100% - 11 * #{$gutterHorizontal}) / 12) + 3 * #{$gutterHorizontal});
+        }
+
+        .col-sm-5-12 {
+            width: calc( 5 * ((100% - 11 * #{$gutterHorizontal}) / 12) + 4 * #{$gutterHorizontal});
+        }
+
+        .col-sm-6-12 {
+            width: calc( 6 * ((100% - 11 * #{$gutterHorizontal}) / 12) + 5 * #{$gutterHorizontal});
+        }
+
+        .col-sm-7-12 {
+            width: calc( 7 * ((100% - 11 * #{$gutterHorizontal}) / 12) + 6 * #{$gutterHorizontal});
+        }
+
+        .col-sm-8-12 {
+            width: calc( 8 * ((100% - 11 * #{$gutterHorizontal}) / 12) + 7 * #{$gutterHorizontal});
+        }
+
+        .col-sm-9-12 {
+            width: calc( 9 * ((100% - 11 * #{$gutterHorizontal}) / 12) + 8 * #{$gutterHorizontal});
+        }
+
+        .col-sm-10-12 {
+            width: calc( 10 * ((100% - 11 * #{$gutterHorizontal}) / 12) + 9 * #{$gutterHorizontal});
+        }
+
+        .col-sm-11-12 {
+            width: calc( 11 * ((100% - 11 * #{$gutterHorizontal}) / 12) + 10 * #{$gutterHorizontal});
+        }
+    }
+}

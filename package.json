@@ -1,0 +1,21 @@
+{
+  "name": "zulo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "jquery": "^3.6.3",
+    "sass": "^1.57.1",
+    "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "mixitup": "^3.3.1",
+    "slick-carousel": "^1.8.1",
+    "tiny-slider": "^2.9.4"
+  }
+}
