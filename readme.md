@@ -1,3 +1,3 @@
 # Zulo - Corporate HTML Template
 
-**Demo:** [Demo](http://zulo.binaya-maharjan.com.np/)
+**Demo:** [Zulo Template](http://zulo.binaya-maharjan.com.np/)
